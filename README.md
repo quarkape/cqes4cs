@@ -10,7 +10,7 @@
 
 ## :chart_with_downwards_trend:  系统演示视频地址
 
-[移步小破站]()​
+[移步小破站](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)​
 
 ---
 
