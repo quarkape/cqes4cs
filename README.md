@@ -16,7 +16,7 @@
 
 ## :pushpin: ​后端项目地址
 
-[后端项目+SQL+API文档](https://github.com/quarkape/CQES4CS_backend.git)
+[后端项目+SQL+API文档](https://github.com/quarkape/cqes4csbe.git)
 
 ---
 
