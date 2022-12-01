@@ -81,7 +81,7 @@
 
 ---
 
-### <span id="mysqlconf">3、Redis配置说明</span>
+### <span id="redisconf">3、Redis配置说明</span>
 
 1. 项目要求的redis配置可以在：`cqes4cs\src\main\resources\application.yml`配置文件中找到：
 
