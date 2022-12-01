@@ -68,7 +68,7 @@
 
    ```yaml
    datasource:
-   	# 用户名为root
+       # 用户名为root
        username: root
        # 密码为root
        password: root
@@ -87,7 +87,7 @@
 
    ```yaml
    redis:
-   	# 端口6379
+       # 端口6379
        port: 6379
        # 密码kkty
        password: kkty
