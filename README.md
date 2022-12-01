@@ -141,11 +141,7 @@
 
 ## :pushpin: ​后端项目地址
 
-<<<<<<< HEAD
 [后端项目+SQL文件+静态资源目录+接口文档](https://github.com/quarkape/cqes4csbe.git)
-=======
-[后端项目+SQL+API文档](https://github.com/quarkape/cqes4csbe.git)
->>>>>>> c54324b237353e3856ee90d1ce758c601f03c041
 
 ---
 
