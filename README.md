@@ -16,6 +16,15 @@
 
 ---
 
+## :ice_cream: 镜像
+
+|      |                      GitHub                       |                      Gitee                       |
+| :--: | :-----------------------------------------------: | :----------------------------------------------: |
+| 前端 |  [点我前往](https://github.com/quarkape/cqes4cs)  |  [点我前往](https://gitee.com/quarkape/cqes4cs)  |
+| 后端 | [点我前往](https://github.com/quarkape/cqes4csbe) | [点我前往](https://gitee.com/quarkape/cqes4csbe) |
+
+---
+
 ## :notebook: 环境要求
 
 - JDK，[你可以参考这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
