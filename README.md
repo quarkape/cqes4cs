@@ -12,11 +12,11 @@
 
 ## :chart_with_downwards_trend:  安装配置【推荐】
 
-[点击观看安装配置视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)
+[点击观看安装配置视频教程](https://www.bilibili.com/video/BV1TD4y1Y7CV?share_source=copy_web)
 
 ---
 
-## :notebook:环境要求
+## :notebook: 环境要求
 
 - JDK，[你可以参照这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
 
