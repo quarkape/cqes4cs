@@ -12,7 +12,7 @@
 
 ## :chart_with_downwards_trend:  安装配置【推荐】
 
-[点击观看安装配置视频教程](https://www.bilibili.com/video/BV1TD4y1Y7CV?share_source=copy_web)
+[点击观看安装配置视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)
 
 ---
 
