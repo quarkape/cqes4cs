@@ -44,9 +44,10 @@
 ### 1、前端项目安装、运行与部署
 
 1. 下载项目压缩包至本地解压，或者使用`git clone https://github.com/quarkape/cqes4cs.git`克隆项目
-2. 进入项目目录，打开命令窗口，执行`npm install`，会开始下载前端项目所需要的所有依赖，等待所有依赖下载完成
-3. 进入项目目录，打开命令窗口，执行`npm run serve`，会开始运行前端项目
-4. 如果需要部署该项目，你需要对前端项目进行构建：进入项目目录，打开命令窗口，执行`npm run build`，执行完后，项目目录下会生成一个`dist`文件夹，这个文件夹就是构建之后的文件，可以直接部署
+2. 进入项目目录，打开命令窗口，执行`npm cache clear --force`清除缓存
+3. 进入项目目录，打开命令窗口，执行`npm install`，会开始下载前端项目所需要的所有依赖，这可能需要一定的时间
+4. 进入项目目录，打开命令窗口，执行`npm run serve`，会开始运行前端项目
+5. 如果需要部署该项目，你需要对前端项目进行构建：进入项目目录，打开命令窗口，执行`npm run build`，执行完后，项目目录下会生成一个`dist`文件夹，这个文件夹就是构建之后的文件，可以直接部署
 
 ---
 
@@ -67,7 +68,7 @@
    source "G:\Projects\IDEA\cqes4cs\cqes4cs.sql"
    ```
 
-3. 导入数据后，切换到数据库cqes4cs中，查询users表，看是否有数据，如果有的话说明导入成功
+3. 导入数据后，切换到数据库cqes4cs中，查询users表，看是否有一条数据，如果有的话说明导入成功
 
 4. **如果你使用的是phpstudy+mysql workbench，你可以观看上述[视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)，了解如何使用mysql workbench将数据快捷导入到数据库中**。如果你想要安装使用MySQL WorkBench，[你可以参考这篇文章](https://blog.csdn.net/unauna9739/article/details/124702155)
 
@@ -84,7 +85,7 @@
        driver-class-name: com.mysql.jdbc.Driver
    ```
 
-   请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改配置文件）
+   请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改项目中的配置文件）
 
 6. 安装MySQL之后，需要关闭MySQL的`only_full_group_by`功能，[你可以参考这篇文章关闭MySQL的此项功能](https://www.jianshu.com/p/0e2a676a189c)
 
@@ -103,15 +104,15 @@
        host: 127.0.0.1
    ```
 
-   请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改配置文件）
+   请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改项目的配置文件）
 
 ---
 
 ### 4、后端项目安装、运行与部署
 
 1. 下载项目压缩包至本地解压，或者使用`git clone https://github.com/quarkape/cqes4csbe.git`克隆项目
-2. 进入项目目录，打开命令窗口，执行`mvn dependency:copy-dependencies`，会开始下载后端项目所需要的所有依赖，等待所有依赖下载完成
-3. 进入项目目录，打开命令窗口，执行`mvn spring-boot:run`，开始运行后端项目
+2. 用IDEA打开项目，IDEA会自动下载pom.xml文件里面的所有依赖，这可能需要一定的时间
+3. 下载完成后，运行项目，没有错误说明运行成功
 4. 如果需要部署该项目，你需要对后端项目进行打包，进入项目目录，打开命令窗口，执行`mvn package`对项目进行打包。默认打包为jar包，如果需要更换为war包，请自行搜索相关流程。
 
 ---
