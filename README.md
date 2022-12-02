@@ -18,10 +18,10 @@
 
 ## :ice_cream: 镜像
 
-|      |                      GitHub                       |                      Gitee                       |
-| :--: | :-----------------------------------------------: | :----------------------------------------------: |
-| 前端 |  [点我前往](https://github.com/quarkape/cqes4cs)  |  [点我前往](https://gitee.com/quarkape/cqes4cs)  |
-| 后端 | [点我前往](https://github.com/quarkape/cqes4csbe) | [点我前往](https://gitee.com/quarkape/cqes4csbe) |
+|      |                       GitHub                       |                       Gitee                       |
+| :--: | :------------------------------------------------: | :-----------------------------------------------: |
+| 前端 |   [cqes4cs](https://github.com/quarkape/cqes4cs)   |   [cqes4cs](https://gitee.com/quarkape/cqes4cs)   |
+| 后端 | [cqes4csbe](https://github.com/quarkape/cqes4csbe) | [cqes4csbe](https://gitee.com/quarkape/cqes4csbe) |
 
 ---
 
@@ -153,18 +153,6 @@
 6. 在教师端，点击学分评价，点击上传学生成绩，选择后端项目中`files\grades\test_grades_data.xlsx`文件上传，用于生成学生成绩数据
 7. 退出教师账号，登录学生账号，学生账号是可以选择纲刚上传的学生名单文件中的任一学号，初始密码也为学号。一个可用的学号和密码为“51214108037”
 8. 在学生端，可以提交学分申请等。至此，基本工作已经差不多完成
-
----
-
-## :pushpin: ​前端项目地址
-
-[点击跳转到前端项目](https://github.com/quarkape/cqes4cs.git)
-
----
-
-## :zap: 后端项目地址
-
-[点击跳转到后端项目(包含数据文件、接口文档和静态资源文档)](https://github.com/quarkape/cqes4csbe.git)
 
 ---
 
