@@ -7,12 +7,15 @@
 💼  一个基于规则配置的综合素质评价系统，助力高校更方便、更高效的开展学生综合素质评价工作。
 
 :raised_hands: 如果需要帮助请联系Q2446247905
+<<<<<<< HEAD
 
 ---
 
 ## :chart_with_downwards_trend:  安装配置【推荐】
 
 [点击观看安装配置视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)​
+=======
+>>>>>>> e2f8c9ad5e2985abcd03d2ee7e609ce5f85f1575
 
 ---
 
@@ -152,7 +155,11 @@
 
 ## :zap: 后端项目地址
 
+<<<<<<< HEAD
 [点击跳转到后端项目(包含数据文件、接口文档和静态资源文档)](https://github.com/quarkape/cqes4csbe.git)
+=======
+[后端项目+SQL文件+静态资源目录+接口文档](https://github.com/quarkape/cqes4csbe.git)
+>>>>>>> e2f8c9ad5e2985abcd03d2ee7e609ce5f85f1575
 
 ---
 
