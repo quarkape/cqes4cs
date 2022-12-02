@@ -18,13 +18,15 @@
 
 ## :notebook: 环境要求
 
-- JDK，[你可以参照这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
+- JDK，[你可以参考这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
 
-- MySQL，[你可以参照这篇文章安装与配置mysql](https://www.runoob.com/mysql/mysql-install.html)
+- MySQL，[你可以参考这篇文章使用phpstudy安装MySQL](https://www.itheima.com/news/20191129/171021.html)
 
-- Redis，[你可以参照这篇文章安装与配置Redis](https://juejin.cn/post/7043684887773052965)
+- Redis，[你可以参考这篇文章安装与配置Redis](https://juejin.cn/post/7043684887773052965)
 
-- Node.js，[你可以参照这篇文章安装与配置Node.js](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+- Node.js，[你可以参考这篇文章安装与配置Node.js](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+
+- maven，[你可以参考这篇文章安装与配置maven并了解在IDEA中的使用](https://blog.csdn.net/qq_32588349/article/details/51461182)
 
   **:herb: 安装完成后，redis和mysql需要进行配置，具体配置参数请点击[mysql配置](#mysqlconf)和[redis配置](#redisconf)，保证配置与项目一致**
 
@@ -67,7 +69,7 @@
 
 3. 导入数据后，切换到数据库cqes4cs中，查询users表，看是否有数据，如果有的话说明导入成功
 
-4. **如果你使用的是phpstudy+mysql workbench，你可以观看视频教程，了解如何使用mysql workbench将数据快捷导入到数据库中**
+4. **如果你使用的是phpstudy+mysql workbench，你可以观看上述[视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)，了解如何使用mysql workbench将数据快捷导入到数据库中**。如果你想要安装使用MySQL WorkBench，[你可以参考这篇文章](https://blog.csdn.net/unauna9739/article/details/124702155)
 
 5. 项目要求的mysql配置可以在：`cqes4cs\src\main\resources\application.yml`配置文件中找到：
 
