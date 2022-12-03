@@ -2,19 +2,14 @@
 
 ![banner](https://user-images.githubusercontent.com/43498577/202853353-1f9b97ee-b7ac-4a55-9fc8-f5c2d2319953.png)
 
----
 
 💼  一个基于规则配置的综合素质评价系统，助力高校更方便、更高效的开展学生综合素质评价工作。
 
 :raised_hands: 如果需要帮助请联系Q2446247905
 
----
-
 ## :chart_with_downwards_trend:  安装配置【推荐】
 
 [点击观看安装配置视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)
-
----
 
 ## :ice_cream: 镜像
 
@@ -23,7 +18,6 @@
 | 前端 |   [cqes4cs](https://github.com/quarkape/cqes4cs)   |   [cqes4cs](https://gitee.com/quarkape/cqes4cs)   |
 | 后端 | [cqes4csbe](https://github.com/quarkape/cqes4csbe) | [cqes4csbe](https://gitee.com/quarkape/cqes4csbe) |
 
----
 
 ## :notebook: 环境要求
 
@@ -40,7 +34,6 @@
   **:herb: 安装完成后，redis和mysql需要进行配置，具体配置参数请点击[mysql配置](#mysqlconf)和[redis配置](#redisconf)，保证配置与项目一致**
 
 
----
 
 ## :baguette_bread: 项目技术框架与主要组件
 
@@ -58,7 +51,6 @@
 4. 进入项目目录，打开命令窗口，执行`npm run serve`，会开始运行前端项目
 5. 如果需要部署该项目，你需要对前端项目进行构建：进入项目目录，打开命令窗口，执行`npm run build`，执行完后，项目目录下会生成一个`dist`文件夹，这个文件夹就是构建之后的文件，可以直接部署
 
----
 
 ### <span id="mysqlconf">2、MySQL数据导入与配置说明</span>
 
@@ -98,7 +90,6 @@
 
 6. 安装MySQL之后，需要关闭MySQL的`only_full_group_by`功能，[你可以参考这篇文章关闭MySQL的此项功能](https://www.jianshu.com/p/0e2a676a189c)
 
----
 
 ### <span id="redisconf">3、Redis配置说明</span>
 
@@ -115,7 +106,6 @@
 
    请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改项目的配置文件）
 
----
 
 ### 4、后端项目安装、运行与部署
 
@@ -124,7 +114,6 @@
 3. 下载完成后，运行项目，没有错误说明运行成功
 4. 如果需要部署该项目，你需要对后端项目进行打包，进入项目目录，打开命令窗口，执行`mvn package`对项目进行打包。默认打包为jar包，如果需要更换为war包，请自行搜索相关流程。
 
----
 
 ### 5、静态资源的部署
 
@@ -140,8 +129,7 @@
    // 你需要注意两点：一是使用正斜杠/，二是路径后面一定要加一个/
    registry.addResourceHandler("/files/**").addResourceLocations("file:G:/Projects/IDEA/cqes4cs/files/");
    ```
-
----
+   
 
 ### 6、进入系统与初步配置使用
 
@@ -154,7 +142,6 @@
 7. 退出教师账号，登录学生账号，学生账号是可以选择纲刚上传的学生名单文件中的任一学号，初始密码也为学号。一个可用的学号和密码为“51214108037”
 8. 在学生端，可以提交学分申请等。至此，基本工作已经差不多完成
 
----
 
 ## ✂️  静态资源结构说明
 
@@ -182,7 +169,6 @@
             1660232101630.xls  （上传的学生名单文件存储位置）
 ```
 
----
 
 ## :bow_and_arrow: 特色功能
 
