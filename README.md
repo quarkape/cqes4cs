@@ -7,41 +7,44 @@
 
 :raised_hands: 如果需要帮助请联系Q2446247905
 
-## :chart_with_downwards_trend:  安装配置【推荐】
+&nbsp;
+
+## 安装配置【推荐】
 
 [点击观看安装配置视频教程](https://www.bilibili.com/video/BV1KG4y1Z7Pd?share_source=copy_web)
 
-## :ice_cream: 镜像
+&nbsp;
+
+##  镜像
 
 |      |                       GitHub                       |                       Gitee                       |
 | :--: | :------------------------------------------------: | :-----------------------------------------------: |
 | 前端 |   [cqes4cs](https://github.com/quarkape/cqes4cs)   |   [cqes4cs](https://gitee.com/quarkape/cqes4cs)   |
 | 后端 | [cqes4csbe](https://github.com/quarkape/cqes4csbe) | [cqes4csbe](https://gitee.com/quarkape/cqes4csbe) |
 
+&nbsp;
 
-## :notebook: 环境要求
+## 环境要求
 
 - JDK，[你可以参考这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
-
 - MySQL，[你可以参考这篇文章使用phpstudy安装MySQL](https://www.itheima.com/news/20191129/171021.html)
-
 - Redis，[你可以参考这篇文章安装与配置Redis](https://juejin.cn/post/7043684887773052965)
-
 - Node.js，[你可以参考这篇文章安装与配置Node.js](https://www.runoob.com/nodejs/nodejs-install-setup.html)
-
 - maven，[你可以参考这篇文章安装与配置maven并了解在IDEA中的使用](https://blog.csdn.net/qq_32588349/article/details/51461182)
 
-  **:herb: 安装完成后，redis和mysql需要进行配置，具体配置参数请点击[mysql配置](#mysqlconf)和[redis配置](#redisconf)，保证配置与项目一致**
+**安装完成后，redis和mysql需要进行配置，具体配置参数请看下面mysql配置和redis配置，保证配置与项目一致**
 
+&nbsp;
 
-
-## :baguette_bread: 项目技术框架与主要组件
+## 项目技术框架与主要组件
 
 - 前端：Vue，ElementUI，echarts，axios，nprogress，qs
 - 后端：springboot，redis，shiro，poi，mybatis
 - 数据库：mysql
 
-## :taco: 详细安装、运行以及部署流程
+&nbsp;
+
+## 详细安装、运行以及部署流程
 
 ### 1、前端项目安装、运行与部署
 
@@ -142,8 +145,9 @@
 7. 退出教师账号，登录学生账号，学生账号是可以选择纲刚上传的学生名单文件中的任一学号，初始密码也为学号。一个可用的学号和密码为“51214108037”
 8. 在学生端，可以提交学分申请等。至此，基本工作已经差不多完成
 
+&nbsp;
 
-## ✂️  静态资源结构说明
+## 静态资源结构说明
 
 ```
 
@@ -169,8 +173,9 @@
             1660232101630.xls  （上传的学生名单文件存储位置）
 ```
 
+&nbsp;
 
-## :bow_and_arrow: 特色功能
+## 特色功能
 
 - 提前配置加分规则，减少繁琐的计分过程，提高科学性和效率
 - 支持文件导入导出，覆盖常见功能
