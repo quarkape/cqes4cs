@@ -67,7 +67,7 @@
    # 使用数据库cqes4cs
    use cqes4cs;
    # 设置数据库编码方式
-   set name utf8;
+   set names utf8;
    # 下面的source后面是sql文件的位置，例如是G:\Projects\IDEA\cqes4cs\cqes4cs.sql的话就是：
    source "G:\Projects\IDEA\cqes4cs\cqes4cs.sql"
    ```
@@ -133,6 +133,8 @@
    registry.addResourceHandler("/files/**").addResourceLocations("file:G:/Projects/IDEA/cqes4cs/files/");
    ```
    
+
+2. files文件夹下面有两个文件夹是空的，上传到github和gitee上面的时候这两个文件夹没有上传上去，但是要正常使用系统的话必须要这两个文件夹才行，需要你自己根据下面的静态资源结构说明去把`configs`和`material`文件夹加上，这两个文件夹分别是存储导出的配置文件和存储学分申请的图片的两个文件夹。
 
 ### 6、进入系统与初步配置使用
 
