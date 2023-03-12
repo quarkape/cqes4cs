@@ -7,6 +7,16 @@
 
 :raised_hands: 加入q群一起来玩：715602514
 
+:ghost: gitee上面项目同名
+
+
+
+# 重构计划
+
+- 重构部分代码
+- 优化sql语句，避免在mysql5.8及以上出现某些错误
+- 增加新功能（将参赛、获奖等信息导出为pdf；在线制作简历；分享及应用加分配置文件等）
+
 
 
 # 写在前面
@@ -24,20 +34,17 @@
 
 - 注意一下现在前端和后端合并到一个仓库里面了
 
-  | 前端项目 | 后端项目 | sql文件 |
-  | -------- | -------- | ------- |
-  |          |          |         |
-
-  
+  | 前端项目  | 后端项目 | sql文件     | 后端静态文件 |
+  | --------- | -------- | ----------- | ------------ |
+  | front-end | back-end | cqes4cs.sql | files        |
 
 &nbsp;
 
 #  镜像
 
-|      |                       GitHub                       |                       Gitee                       |
-| :--: | :------------------------------------------------: | :-----------------------------------------------: |
-| 前端 |   [cqes4cs](https://github.com/quarkape/cqes4cs)   |   [cqes4cs](https://gitee.com/quarkape/cqes4cs)   |
-| 后端 | [cqes4csbe](https://github.com/quarkape/cqes4csbe) | [cqes4csbe](https://gitee.com/quarkape/cqes4csbe) |
+|      |                     GitHub                     |                     Gitee                     |
+| :--: | :--------------------------------------------: | :-------------------------------------------: |
+| 名称 | [cqes4cs](https://github.com/quarkape/cqes4cs) | [cqes4cs](https://gitee.com/quarkape/cqes4cs) |
 
 &nbsp;
 
@@ -107,7 +114,7 @@
 
    请确保电脑上面的相关配置与项目中的配置保持一致（可以改电脑上的配置，也可以改项目中的配置文件）
 
-6. 安装MySQL之后，需要关闭MySQL的`only_full_group_by`功能，[你可以参考这篇文章关闭MySQL的此项功能](https://www.jianshu.com/p/0e2a676a189c)
+6. 安装MySQL之后，如果你的数据库版本是5.7以上的，则需要关闭MySQL的`only_full_group_by`功能，[你可以参考这篇文章关闭MySQL的此项功能](https://www.jianshu.com/p/0e2a676a189c)
 
 ## <span id="redisconf">3、Redis配置说明</span>
 
