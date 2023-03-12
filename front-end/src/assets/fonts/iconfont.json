@@ -1,0 +1,51 @@
+{
+  "id": "1780719",
+  "name": "123",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4933869",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
+      "icon_id": "10099684",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "10099685",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "10099687",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10099702",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "10099705",
+      "name": "喜欢",
+      "font_class": "xihuan",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

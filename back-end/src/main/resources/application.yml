@@ -1,0 +1,33 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 60MB
+      enabled: true
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/cqes4cs?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: false
+      validation-query: SELECT 1
+      max-wait-millis: 60000
+  redis:
+    port: 6379
+    password: kkty
+    host: 127.0.0.1
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 1000
+      shutdown-timeout: 100
+
+server:
+  port: 8003
