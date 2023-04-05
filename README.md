@@ -191,6 +191,3 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](https://raw.githubusercontent.com/quarkape/cqes4cs/main/pay/wechat.jpg) | ![](https://raw.githubusercontent.com/quarkape/cqes4cs/main/pay/alipay.jpg) |
 
-# 远程指导
-
-- 有问题可以问，小问题可以帮忙看一下，大问题有偿。比如远程debug或者帮忙部署到服务器上面什么的。
