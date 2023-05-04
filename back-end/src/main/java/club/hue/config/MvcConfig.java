@@ -51,7 +51,7 @@ public class MvcConfig extends WebMvcConfigurationSupport {
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         // 加分图片，上传的学生名单、上传的成绩表格，上传的加分文件，导出的评价结果等静态资源目录
         // registry.addResourceHandler("/files/**").addResourceLocations("/www/apps/cqes4cs/files/");
-        registry.addResourceHandler("/files/**").addResourceLocations("file:G:/Projects/Materials/cqes4cs/files/");
+        registry.addResourceHandler("/files/**").addResourceLocations("file:G:/Projects/cqes4cs/files/");
         super.addResourceHandlers(registry);
     }
 }

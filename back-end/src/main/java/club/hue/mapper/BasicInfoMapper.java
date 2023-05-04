@@ -31,13 +31,13 @@ public interface BasicInfoMapper {
     List<HashMap<String, Object>> getContestSearchResultByWords(String words);
 
     // 教师端学生评价页面获取学生的学业成绩和综合成绩
-    @Select("select id, name, score_main, score_other, score_plus, score_sub, score_final, (@rowno:=@rowno+1) as rank from " +
-            "(select tmain.id, name, tmain.score_main, ifnull(tother.score_other,0) score_other, ifnull(tf.score_plus,0) as score_plus, ifnull(te.score_sub,0) as score_sub, (truncate((tmain.score_main+ifnull(tother.score_other,0)),4)+ifnull(tf.score_plus,0)-ifnull(te.score_sub,0)) as score_final from " +
-            "(select id,year,truncate(sum(grade*score)/sum(score),4)*(select weight from weights_config where type=2) as score_main from grades where year=#{year} group by id) tmain " +
+    @Select("select `id`, `name`, score_main, score_other, score_plus, score_sub, score_final, (@rowno:=@rowno+1) as `rank` from " +
+            "(select tmain.id, `name`, tmain.score_main, ifnull(tother.score_other,0) score_other, ifnull(tf.score_plus,0) as score_plus, ifnull(te.score_sub,0) as score_sub, (truncate((tmain.score_main+ifnull(tother.score_other,0)),4)+ifnull(tf.score_plus,0)-ifnull(te.score_sub,0)) as score_final from " +
+            "(select `id`,year,truncate(sum(grade*score)/sum(score),4)*(select weight from weights_config where type=2) as score_main from grades where year=#{year} group by id) tmain " +
             "left join " +
-            "(select substring(ta.id, 14) as id, ifnull(sum(tb.score),0) score_other from authentications ta " +
+            "(select substring(ta.id, 14) as `id`, ifnull(sum(tb.score),0) score_other from authentications ta " +
             "left join " +
-            "(select id, score from authentication_score) tb " +
+            "(select `id`, score from authentication_score) tb " +
             "on ta.id = tb.id " +
             "group by substring(ta.id, 16)) tother " +
             "on tmain.id=tother.id " +
@@ -55,7 +55,7 @@ public interface BasicInfoMapper {
     List<HashMap<String, Object>> getAllStudentScore(String year, String majorCode, String managerId);
 
     // 学生根据自己的所在的年级和专业获取当年的评价结果,semester是学生是多少届的，major是学生专业，year是当前学年
-    @Select("select id, name, score_main, score_other, score_plus, score_sub, score_final, (@rowno:=@rowno+1) as rank from " +
+    @Select("select `id`, `name`, score_main, score_other, score_plus, score_sub, score_final, (@rowno:=@rowno+1) as `rank` from " +
             "(select tmain.id, name, tmain.score_main, ifnull(tother.score_other,0) score_other, ifnull(tf.score_plus,0) as score_plus, ifnull(te.score_sub,0) as score_sub, (truncate((tmain.score_main + ifnull(tother.score_other,0)),4) + ifnull(tf.score_plus,0)-ifnull(te.score_sub,0)) as score_final from " +
             "(select id,year,truncate(sum(grade*score)/sum(score),4)*(select weight from weights_config where type=2) as score_main from grades where year=#{year} group by id) tmain " +
             "left join " +
