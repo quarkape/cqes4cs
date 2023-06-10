@@ -32,9 +32,9 @@
 # 环境要求
 
 - JDK，[你可以参考这篇文章安装与配置JDK](https://www.runoob.com/java/java-environment-setup.html)
-- MySQL，[你可以参考这篇文章使用phpstudy安装MySQL](https://www.itheima.com/news/20191129/171021.html)
+- MySQL，[你可以参考这篇文章使用phpstudy安装MySQL](https://www.itheima.com/news/20191129/171021.html)，版本要求，低于v7.0，本项目使用的是v5.6，如果需要使用高版本，请参考后面教程部分将`only_full_group_by`字段关闭。
 - Redis，[你可以参考这篇文章安装与配置Redis](https://juejin.cn/post/7043684887773052965)
-- Node.js，[你可以参考这篇文章安装与配置Node.js](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+- Node.js，[你可以参考这篇文章安装与配置Node.js](https://www.runoob.com/nodejs/nodejs-install-setup.html)，版本要求：低于v16，本项目使用的是12.17.0
 - maven，[你可以参考这篇文章安装与配置maven并了解在IDEA中的使用](https://blog.csdn.net/qq_32588349/article/details/51461182)
 
 **安装完成后，redis和mysql需要进行配置，具体配置参数请看下面mysql配置和redis配置，保证配置与项目一致**
