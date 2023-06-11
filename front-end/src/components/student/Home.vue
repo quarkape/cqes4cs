@@ -12,6 +12,7 @@
             <el-menu-item index="/eonscore">学分评价</el-menu-item>
             <el-menu-item index="/eshowcase">评价公示</el-menu-item>
             <el-menu-item index="/sapplication">学分管理</el-menu-item>
+            <el-menu-item index="/myresume">我的简历</el-menu-item>
           </el-menu>
         </div>
         <!-- 个人信息 -->

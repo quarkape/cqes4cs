@@ -50,7 +50,7 @@
         <el-table-column label="操作" width="160">
           <template slot-scope="props">
             <el-button size="mini" circle type="success" icon="el-icon-s-operation" @click="openModifyScoreDialog(props.row.id)" title="新增手动加分/扣分"></el-button>
-            <el-button size="mini" circle type="primary" icon="el-icon-s-marketing" @click="openManageScoreDialog(props.row.id)" title="管理学分"></el-button>
+            <!-- <el-button size="mini" circle type="primary" icon="el-icon-s-marketing" @click="openManageScoreDialog(props.row.id)" title="管理学分"></el-button> -->
             <el-button size="mini" circle type="normal" icon="el-icon-s-management" @click="getScoreManually(props.row.id)" title="管理加分扣分"></el-button>
           </template>
         </el-table-column>
@@ -58,6 +58,7 @@
       <div style="font-size:14px;color:#666;margin-top:10px"><i class="el-icon-info"></i>&nbsp;&nbsp;学业成绩和其他学分都是加权之后的结果</div>
       <div style="font-size:14px;color:#666;margin-top:4px"><i class="el-icon-info"></i>&nbsp;&nbsp;以综合成绩排名；综合成绩相同时，以学业成绩排名。学业成绩相同时，以学号降序排序。</div>
       <div style="font-size:14px;color:#666;margin-top:4px"><i class="el-icon-info"></i>&nbsp;&nbsp;学生学业成绩导入后，才能生成综合成绩</div>
+      <div style="font-size:14px;color:#666;margin-top:4px"><i class="el-icon-info"></i>&nbsp;&nbsp;其他学分来自于学生学分申请，请前往学生管理页面，在操作一栏中选择管理该生学分进行操作。</div>
     </el-card>
     <el-dialog title="手动加分/扣分" :visible.sync="modifyScoreDialog" width="30%" @closed="handleModifyScoreClose" :close-on-click-modal="false">
       <el-form label-position="right">

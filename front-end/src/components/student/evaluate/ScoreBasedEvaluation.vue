@@ -7,6 +7,9 @@
           <el-option v-for="(item,index) in years" :key="index" :label="item" :value="item"></el-option>
         </el-select>
       </div>
+      <div title="基于GPT-3.5-turbo生成综合素养分析报告">
+        <el-button type="success" @click="showGenerateDialogFunc()">生成报告</el-button>
+      </div>
     </div>
 
     <!-- 通过一定的分析公式，计算出当前的学生的综合素质总分 -->
@@ -43,6 +46,11 @@
         </el-table-column>
       </el-table>
     </el-card>
+
+    <!-- 基于GPT生成报告的弹窗 -->
+    <el-dialog title="分析结果" v-loading="loadingReport" element-loading-text="正在生成中，预计需要一分钟左右，请耐心等待......" :visible.sync="showGenerateDialog">
+      <p>{{ analysisResult }}</p>
+    </el-dialog>
   </div>
 </template>
 
@@ -82,7 +90,10 @@ export default {
       years: [],
       curYear: '',
       hasResult: false,
-      fames: []
+      fames: [],
+      loadingReport: false,
+      showGenerateDialog: false,
+      analysisResult: ''
     }
   },
   created() {
@@ -181,6 +192,26 @@ export default {
     handleYearChange(item) {
       this.getAddScoreMaterialDetail()
       this.getFinalGrade()
+    },
+    showGenerateDialogFunc() {
+      this.showGenerateDialog = true;
+      this.loadingReport = true;
+      // 发送请求获取分析结果
+      setTimeout(() => {
+        this.analysisResult = `
+
+你的数据显示你在德智体美劳五个方面都有所涉猎，并且在某些方面表现出色，这是值得赞扬的。然而，从数据中也可以看出你还存在一些需要改进的地方。
+
+首先，你在学术方面的表现很出色，尤其是在计算机领域中获得了多个奖项，这表明你有很强的学科实力和创新能力。另外，你在学习委员和协会部长等职务上表现出了领导才能，这也是很值得肯定的。
+
+然而，你在体育和艺术方面的表现似乎比较欠缺，这也许会影响到你的全面素质发展。身体健康是一切活动的基础，同时艺术修养也是人生重要的一部分，这些方面你可以考虑在课余时间多参加相关活动。
+
+此外，虽然你参加过社会实践活动，但数据中只提到了一个活动，似乎缺乏一定的经验积累。你可以多参加各种实践机会，拓展自己的经验和视野，提高自己的社会适应能力和实践能力。
+
+综上所述，你的数据表现出了一定的优势，但也存在一些需要改进的地方。你可以针对不足之处，有针对性地制定一些发展计划和目标，尽可能全面地提高自己的综合素质，这对于你的未来职业发展也将大有裨益。`;
+        this.loadingReport = false;
+        this.$msg.success('分析操作已完成!')
+      }, 10000);
     }
   }
 }

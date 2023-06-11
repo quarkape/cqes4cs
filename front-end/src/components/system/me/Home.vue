@@ -49,7 +49,7 @@ export default {
       fileList: [],
       basicInfo: {},
       sysInfo: {
-        username: '222017321092008',
+        username: '',
         password: '',
         ensurepwd: ''
       },

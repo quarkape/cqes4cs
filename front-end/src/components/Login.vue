@@ -4,9 +4,9 @@
     <!-- 左边信息区 -->
     <div class="container-left">
       <div class="container-left-foot">
-        <div>comprehensive quality evaluate system for college student</div>
-        <div>copyright &copy; 2021 quarkape. all rights reserved.</div>
-        <div>渝ICP备2021012014号</div>
+        <div>CQES4CS - 高校学生综合素养测评管及职业发展支持一体化平台</div>
+        <div>Designed and developed by @quarkape</div>
+        <div>邮箱huewhom@gmail.com</div>
       </div>
     </div>
     <!-- 右边表单区域 -->

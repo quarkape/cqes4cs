@@ -28,7 +28,7 @@ import static java.lang.Integer.parseInt;
 @RestController
 public class MaterialController {
 
-    String basePath = "G:\\Projects\\Materials\\cqes4cs\\files\\";
+    String basePath = "G:\\Projects\\cqes4cs\\files\\";
     // String basePath = "/www/apps/cqes4cs/files/";
 
     @Autowired

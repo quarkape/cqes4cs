@@ -35,10 +35,11 @@ public interface BasicInfoMapper {
             "(select tmain.id, `name`, tmain.score_main, ifnull(tother.score_other,0) score_other, ifnull(tf.score_plus,0) as score_plus, ifnull(te.score_sub,0) as score_sub, (truncate((tmain.score_main+ifnull(tother.score_other,0)),4)+ifnull(tf.score_plus,0)-ifnull(te.score_sub,0)) as score_final from " +
             "(select `id`,year,truncate(sum(grade*score)/sum(score),4)*(select weight from weights_config where type=2) as score_main from grades where year=#{year} group by id) tmain " +
             "left join " +
-            "(select substring(ta.id, 14) as `id`, ifnull(sum(tb.score),0) score_other from authentications ta " +
+            "(select substring(ta.id, 14) as `id`, ifnull(sum(tb.score),0) score_other,year from authentications ta " +
             "left join " +
             "(select `id`, score from authentication_score) tb " +
             "on ta.id = tb.id " +
+            "where ta.year=#{year} " +
             "group by substring(ta.id, 16)) tother " +
             "on tmain.id=tother.id " +
             "left join " +
@@ -63,6 +64,7 @@ public interface BasicInfoMapper {
             "left join " +
             "(select id, score from authentication_score) tb " +
             "on ta.id=tb.id " +
+            "where ta.year=#{year} " +
             "group by substring(ta.id, 16)) tother " +
             "on tmain.id=tother.id " +
             "left join " +

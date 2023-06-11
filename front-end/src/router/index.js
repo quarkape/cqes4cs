@@ -15,6 +15,7 @@ import Stu_Index from '../components/student/Index.vue'
 import ScoreBasedEvaluation from '../components/student/evaluate/ScoreBasedEvaluation.vue'
 import EvaluationResult from '../components/student/evaluate/EvaluationResult.vue'
 import ScoreManagement from '../components/student/management/ScoreManagement.vue'
+import Resume from '../components/student/management/Resume.vue'
 
 // 管理员（教师）端系统界面
 import Mag_Home from '../components/manager/Home.vue'
@@ -44,7 +45,8 @@ const routes = [
       { path: '/eshowcase', component: EvaluationResult, meta: {title: '评价公示'} },
       { path: '/sapplication', component: ScoreManagement, meta: {title: '学分管理'} },
       { path: '/zone_stu', component: ZoneStu, meta: {title: '我的'} },
-      { path: '/notify_stu', component: NotifyStu, meta: {title: '通知'} }
+      { path: '/notify_stu', component: NotifyStu, meta: {title: '通知'} },
+      { path: '/myresume', component: Resume, meta: {title: '个人简历'} }
     ]
   },
   { path: '/mag_home',

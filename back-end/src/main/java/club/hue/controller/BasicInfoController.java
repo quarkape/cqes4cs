@@ -30,7 +30,7 @@ public class BasicInfoController {
     @Resource
     private RedisTemplate<String, Serializable> redisTemplate;
 
-    String basePath = "G:\\Projects\\Materials\\cqes4cs\\files\\";
+    String basePath = "G:\\Projects\\cqes4cs\\files\\";
     // String basePath = "/www/apps/cqes4cs/files/";
     @RequestMapping("/getStudentAllScoreMaterials")
     @RequiresRoles("student")

@@ -117,20 +117,20 @@
           })
       },
       // 设置班级助理
-      setAssistant(id) {
-        this.$confirm('确认设置/取消助手权限?','确定','取消').then(async () => {
-          let {data: res} = await this.$http.post("/setAssistant", this.$qs.stringify({userid: id}))
-          if (!res) return
-          if (res.code != 0) return this.$msg.error(res.message)
-          for (let i in this.studentLists) {
-            if (id == this.studentLists[i].userid) {
-              this.studentLists[i].role = this.studentLists[i].role=='student'?'assistant':'student'
-              break
-            }
-          }
-          this.$msg.success("修改评价助手权限成功!")
-        })
-      },
+      // setAssistant(id) {
+      //   this.$confirm('确认设置/取消助手权限?','确定','取消').then(async () => {
+      //     let {data: res} = await this.$http.post("/setAssistant", this.$qs.stringify({userid: id}))
+      //     if (!res) return
+      //     if (res.code != 0) return this.$msg.error(res.message)
+      //     for (let i in this.studentLists) {
+      //       if (id == this.studentLists[i].userid) {
+      //         this.studentLists[i].role = this.studentLists[i].role=='student'?'assistant':'student'
+      //         break
+      //       }
+      //     }
+      //     this.$msg.success("修改评价助手权限成功!")
+      //   })
+      // },
       async getAllClasses() {
         let {data: res} = await this.$http.post("/getAllClasses")
         if (!res) return

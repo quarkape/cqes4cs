@@ -38,6 +38,7 @@
     <el-divider content-position="left">配置加分规则</el-divider>
     <el-card shadow="hover">
       <div style="text-align:right;margin-bottom:20px">
+        <el-button type="warning" icon="el-icon-s-promotion" size="small">检查配置(正在建设)</el-button>
         <el-button type="danger" icon="el-icon-s-promotion" size="small" @click="submit">提交修改</el-button>
       </div>
        <el-tree :data="table" :props="defaultProps" node-key="uuid" :expand-on-click-node="false">
@@ -60,7 +61,7 @@
     <el-divider content-position="left">配置专业列表</el-divider>
     <el-card shadow="hover">
       <div class="index-item" v-for="item in majors" :key="item.uuid">
-        <div>{{item.major_name}} <span style="margin:0 8px">|</span> {{item.major_code}}</div>
+        <div>{{item.major_name}}(专业代码：{{item.major_code}})</div>
         <div class="item-opts">
           <el-button style="color:#F56C6C" type="text" size="mini" @click="() => modifyMajorName(item.uuid, item.major_code)">修改名称</el-button>
           <el-button style="color:#67C23A" type="text" size="mini" @click="() => modifyMajorCode(item.uuid, item.major_name)">修改专业代码</el-button>

@@ -95,21 +95,21 @@ Vue.prototype.$msg = function(msg){
 Vue.prototype.$msg.success = function (msg) {
   return Message.success({
     message: msg,
-    duration: 1500
+    duration: 1000
   })
 }
 
 Vue.prototype.$msg.warning = function (msg) {
   return Message.warning({
     message: msg,
-    duration: 1500
+    duration: 1000
   })
 }
 
 Vue.prototype.$msg.error = function (msg) {
   return Message.error({
     message: msg,
-    duration: 1500
+    duration: 1000
   })
 }
 
